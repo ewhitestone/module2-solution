@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #ccc;
+}
+
+header h1 {
+	text-align: center;
+	margin: 50px;
+}
+
+.box, .box3 {
+	border: 2px ridge blue;
+	background-color: green;
+	color: white;
+	padding: 10px;
+	width: 31%;
+	margin: 1%;
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.desc {
+	padding: 5px;
+	font-size: 20px;
+}
+.food {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 5px 20px;
+	margin-top: 0;
+	height: 20px;
+	background-color: white;
+	color: blue;
+	border-bottom: 2px ridge blue;
+	border-left: 2px ridge blue;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+	.box {
+		width: 46%;
+		margin: 2%;
+	}
+	.box3 {
+		width: 96%;
+		margin: 2%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header h1 {
+		margin: 20px;
+	}
+	.box, .box3 {
+		margin: 0 5% 2% 5%;
+		width: 90%;
+	}
+}
